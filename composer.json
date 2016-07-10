@@ -1,0 +1,28 @@
+{
+    "name": "dhii/test-base",
+    "description": "Base functionality for Dhii uniti tests.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dhii Team",
+            "email": "development@dhii.co"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "dhii/php-cs-fixer-config": "dev-master"
+    },
+    "repositories": [
+        {
+            "url": "https://github.com/Dhii/php-cs-fixer-config.git",
+            "type": "git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Dhii\\Test\\": "src/"
+        }
+    }
+}
