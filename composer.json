@@ -10,13 +10,19 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "dhii/test-base-interface": "dev-master"
+    },
     "require-dev": {
         "dhii/php-cs-fixer-config": "dev-master"
     },
     "repositories": [
         {
             "url": "https://github.com/Dhii/php-cs-fixer-config.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/test-base-interface.git",
             "type": "git"
         }
     ],

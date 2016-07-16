@@ -4,9 +4,34 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d154035ca25d527c3bc7af1a97d96df0",
-    "content-hash": "10b364ae3e2d9ba08fb0fb55d927521f",
-    "packages": [],
+    "hash": "bdba86ad61648e26f3db44bcce11f563",
+    "content-hash": "382ebddb4bd3b149f4995b16459dad07",
+    "packages": [
+        {
+            "name": "dhii/test-base-interface",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/test-base-interface.git",
+                "reference": "e4f45e4aad6aaeb6a992d38cd7ec74af1c598719"
+            },
+            "require-dev": {
+                "dhii/php-cs-fixer-config": "dev-master"
+            },
+            "type": "library",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interface for Dhii test classes",
+            "time": "2016-07-16 14:34:30"
+        }
+    ],
     "packages-dev": [
         {
             "name": "dhii/php-cs-fixer-config",
@@ -44,12 +69,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "cc112071b8dc3c4447c8e50e1779cc77041d5f23"
+                "reference": "2afe85e1813820e4b1e059a5a44364d3a9c59171"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/cc112071b8dc3c4447c8e50e1779cc77041d5f23",
-                "reference": "cc112071b8dc3c4447c8e50e1779cc77041d5f23",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/2afe85e1813820e4b1e059a5a44364d3a9c59171",
+                "reference": "2afe85e1813820e4b1e059a5a44364d3a9c59171",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +119,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2016-07-09 20:42:11"
+            "time": "2016-07-14 08:17:32"
         },
         {
             "name": "sebastian/diff",
@@ -529,6 +554,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "dhii/test-base-interface": 20,
         "dhii/php-cs-fixer-config": 20
     },
     "prefer-stable": false,
