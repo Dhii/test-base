@@ -16,7 +16,9 @@
         "dhii/test-common": "dev-master"
     },
     "require-dev": {
-        "dhii/php-cs-fixer-config": "dev-master"
+        "dhii/php-cs-fixer-config": "dev-master",
+        "satooshi/php-coveralls": "dev-master",
+        "squizlabs/php_codesniffer": "~2.0"
     },
     "repositories": [
         {
