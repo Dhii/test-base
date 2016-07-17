@@ -37,13 +37,15 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/test-common.git",
-                "reference": "0bbf5ae78a47251693eef99e794583769e243ae4"
+                "reference": "8f45707fcac888cd571cfed715f1f5e6c5cadaea"
             },
             "require": {
                 "phpunit/phpunit": "5.4.*"
             },
             "require-dev": {
-                "dhii/php-cs-fixer-config": "dev-master"
+                "dhii/php-cs-fixer-config": "dev-master",
+                "satooshi/php-coveralls": "dev-master",
+                "squizlabs/php_codesniffer": "~2.0"
             },
             "type": "library",
             "autoload": {
@@ -61,7 +63,7 @@
                 }
             ],
             "description": "Functionality that is also needed to test tests.",
-            "time": "2016-07-17 15:21:20"
+            "time": "2016-07-17 17:32:31"
         },
         {
             "name": "doctrine/instantiator",
