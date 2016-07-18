@@ -1,16 +1,16 @@
 <?php
 
-namespace Dhii\Test\Test;
+namespace Dhii\Test\Test\Test;
 
-use Dhii\Test\CanTestCanBeCreatedTrait as TestSubject;
+use Dhii\Test\Test\CanBeCreatedTrait as TestSubject;
 use Dhii\Test\Assertion;
 
 /**
- * Description of CanTestCanBeCreatedTraitTest.
+ * Description of CanBeCreatedTraitTest.
  *
  * @since [*next-version*]
  */
-class CanTestCanBeCreatedTraitTest extends \PHPUnit_Framework_TestCase
+class CanBeCreatedTraitTest extends \PHPUnit_Framework_TestCase
 {
     use Assertion\AssertionFailureTrait;
     use Assertion\AssertionSuccessTrait;
