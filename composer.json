@@ -1,6 +1,6 @@
 {
     "name": "dhii/test-base",
-    "description": "Base functionality for Dhii uniti tests.",
+    "description": "Base functionality for Dhii unit tests.",
     "type": "library",
     "license": "MIT",
     "authors": [
