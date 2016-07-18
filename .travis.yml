@@ -9,6 +9,10 @@ before_script:
 
 script:
   - phpunit
-  
-after_success:
-  - travis_retry php vendor/bin/coveralls
+
+after_script:
+    - vendor/bin/test-reporter --coverage-report="test/coverage/clover.xml"
+
+addons:
+    code_climate:
+        repo_token: 61b3287c37e6a36f0c5e212c5d59fb6bb440b06b2150533b667b957cf1a69552
