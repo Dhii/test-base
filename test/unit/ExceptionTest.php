@@ -13,17 +13,21 @@ class ExceptionTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @since [*next-version*]
+     *
      * @param string|null $message The message for the exception
+     *
      * @return TestSubject The exception instance.
      */
     public function createException($message = null)
     {
         $subject = new TestSubject($message);
+
         return $subject;
     }
 
     /**
      * Tests that a vald PHPUnit exception can be created.
+     *
      * @since [*next-version*]
      */
     public function testCanBeCreated()
@@ -34,6 +38,7 @@ class ExceptionTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Tests that the exception can be thrown with the correct message.
+     *
      * @since [*next-version*]
      */
     public function testCanBeThrown()
@@ -46,6 +51,7 @@ class ExceptionTest extends \PHPUnit_Framework_TestCase
             throw $subject;
         } catch (\Exception $ex) {
             $this->assertContains($token, $ex->getMessage(), $error);
+
             return;
         }
 

@@ -9,10 +9,9 @@ namespace Dhii\Test;
  */
 trait CanTestCanBeCreatedTrait
 {
-
     public function testCanBeCreated()
     {
-        $instance = $this->createInstance();
+        $instance  = $this->createInstance();
         $className = $this->getClassName();
         $this->assertClassType($instance, $className, sprintf('Object must be of type "%1$s"', $className));
 
@@ -24,7 +23,7 @@ trait CanTestCanBeCreatedTrait
     abstract public function createInstance();
 
     abstract public function getClassName();
-    
+
     abstract public function getClassAncestor();
 
     abstract public function assertClassType($actual, $expected, $message = '');

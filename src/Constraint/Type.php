@@ -17,7 +17,9 @@ class Type extends \PHPUnit_Framework_Constraint
 
     /**
      * @since [*next-version*]
+     *
      * @param string $type The name of the class, of which the match must be an instance.
+     *
      * @throws Exception If type is not a string.
      */
     public function __construct($type)
@@ -35,8 +37,10 @@ class Type extends \PHPUnit_Framework_Constraint
      * Compares value to determine if it is of the configured type.
      *
      * @since [*next-version*]
+     *
      * @param mixed $other The value to compare.
-     * @return boolean True if parameter is an object of configured type; otherwise false.
+     *
+     * @return bool True if parameter is an object of configured type; otherwise false.
      */
     public function matches($other)
     {
@@ -49,6 +53,7 @@ class Type extends \PHPUnit_Framework_Constraint
 
     /**
      * @since [*next-version*]
+     *
      * @return string The type, with which comparison will be made.
      */
     protected function _getType()
@@ -58,6 +63,7 @@ class Type extends \PHPUnit_Framework_Constraint
 
     /**
      * @since [*next-version*]
+     *
      * @return string The string representation of this constraint.
      */
     public function toString()

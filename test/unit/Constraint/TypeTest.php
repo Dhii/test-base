@@ -20,18 +20,23 @@ class TypeTest extends \PHPUnit_Framework_TestCase
      * Creates a new constraint instance.
      *
      * @since [*next-version*]
+     *
      * @param string $type The class name for the type constraint.
+     *
      * @return Type A new instance of the constraint.
      */
     public function createConstraint($type = \stdClass::class)
     {
         $constraint = new Type($type);
+
         return $constraint;
     }
 
     /**
      * @since [*next-version*]
+     *
      * @param string|null $type If specified, the mock will assume that it's a constraint for the specified type.
+     *
      * @return Type A mock for the constraint.
      */
     public function createConstraintMock($type = null)
@@ -56,9 +61,11 @@ class TypeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Tests whether the constraint creation will fail if given invalid class name.
+     *
      * @since [*next-version*]
      */
-    public function testNonStringTypeThrowsException() {
+    public function testNonStringTypeThrowsException()
+    {
         $this->expectException(\PHPUnit_Framework_Exception::class);
         $this->expectExceptionMessage('type must be a string');
         $constraint = $this->createConstraint([]);
@@ -66,6 +73,7 @@ class TypeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Tests whether the constraint will succeed when correct class name and object given.
+     *
      * @since [*next-version*]
      */
     public function testMatchSuccess()
@@ -78,6 +86,7 @@ class TypeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Tests that the match will fail if an invalid subject is supplied.
+     *
      * @since [*next-version*]
      */
     public function testMatchFailureInvalidSubject()
@@ -89,6 +98,7 @@ class TypeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Tests that the value returned by protected `_getType()` method is the same as supplied in subject constructor.
+     *
      * @since [*next-version*]
      */
     public function testProtectedGetType()
@@ -101,6 +111,7 @@ class TypeTest extends \PHPUnit_Framework_TestCase
 
     /**
      * Tests that the string representation of the constraint is correct.
+     *
      * @since [*next-version*]
      */
     public function testToString()
