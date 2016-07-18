@@ -17,7 +17,7 @@ trait CanBeCreatedTrait
      */
     public function testCanBeCreated()
     {
-        $instance  = $this->createInstance();
+        $instance = $this->createInstance();
         $className = $this->getClassName();
         $this->assertClassType($instance, $className, sprintf('Object must be of type "%1$s"', $className));
 
