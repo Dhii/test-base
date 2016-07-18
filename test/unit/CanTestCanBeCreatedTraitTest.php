@@ -3,8 +3,7 @@
 namespace Dhii\Test\Test;
 
 use Dhii\Test\CanTestCanBeCreatedTrait as TestSubject;
-use Dhii\Test\CanAssertAssertionFailureTrait as AssertionFailureTrait;
-use Dhii\Test\CanAssertAssertionSuccessTrait as AssertionSuccessTrait;
+use Dhii\Test\Assertion;
 
 /**
  * Description of CanTestCanBeCreatedTraitTest
@@ -13,8 +12,8 @@ use Dhii\Test\CanAssertAssertionSuccessTrait as AssertionSuccessTrait;
  */
 class CanTestCanBeCreatedTraitTest extends \PHPUnit_Framework_TestCase
 {
-    use AssertionFailureTrait;
-    use AssertionSuccessTrait;
+    use Assertion\AssertionFailureTrait;
+    use Assertion\AssertionSuccessTrait;
 
     /**
      * Tests that the check for valid created class fails if not right class.

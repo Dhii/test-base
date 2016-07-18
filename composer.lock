@@ -42,7 +42,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/test-common.git",
-                "reference": "afa99a1fc834234428548a9c76f847e539de31e6"
+                "reference": "683449174bdffcbece9679762c50c9304a347929"
             },
             "require": {
                 "phpunit/phpunit": "5.4.*"
@@ -67,7 +67,7 @@
                 }
             ],
             "description": "Functionality that is also needed to test tests.",
-            "time": "2016-07-18 10:42:17"
+            "time": "2016-07-18 11:15:36"
         },
         {
             "name": "doctrine/instantiator",
