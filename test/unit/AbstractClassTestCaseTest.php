@@ -2,6 +2,9 @@
 
 namespace Dhii\Test\Test;
 
+use Dhii\Test\TestCaseInterface;
+use Dhii\Test\AbstractClassTestCase as TestSubject;
+
 /**
  * Tests AbstractClassTestCase.
  *
