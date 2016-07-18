@@ -42,7 +42,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/test-common.git",
-                "reference": "4ca4b27f6e26639c53498b6e756a56b8c8c72f7e"
+                "reference": "afa99a1fc834234428548a9c76f847e539de31e6"
             },
             "require": {
                 "phpunit/phpunit": "5.4.*"
@@ -67,7 +67,7 @@
                 }
             ],
             "description": "Functionality that is also needed to test tests.",
-            "time": "2016-07-18 08:33:27"
+            "time": "2016-07-18 10:42:17"
         },
         {
             "name": "doctrine/instantiator",
@@ -1273,12 +1273,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "b69648974b39cc6f76aea9d3aee8212cd0c0d75d"
+                "reference": "cd3288cd749886aa1ff43038f17db6494e883262"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/b69648974b39cc6f76aea9d3aee8212cd0c0d75d",
-                "reference": "b69648974b39cc6f76aea9d3aee8212cd0c0d75d",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/cd3288cd749886aa1ff43038f17db6494e883262",
+                "reference": "cd3288cd749886aa1ff43038f17db6494e883262",
                 "shasum": ""
             },
             "require": {
@@ -1320,7 +1320,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-01 16:08:10"
+            "time": "2016-07-17 14:08:33"
         },
         {
             "name": "webmozart/assert",
