@@ -3,10 +3,11 @@
 namespace Dhii\Test;
 
 /**
- * Base class for all Dhii tests.
- * 
+ * Base functionality for all tests.
+ *
  * @since [*next-version*]
  */
-class AbstractTestCase implements TestCaseInterface
+abstract class AbstractTestCase extends \PHPUnit_Framework_TestCase implements TestCaseInterface
 {
+    use Assertion\TypeTrait;
 }

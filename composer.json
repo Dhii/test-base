@@ -1,6 +1,6 @@
 {
     "name": "dhii/test-base",
-    "description": "Base functionality for Dhii uniti tests.",
+    "description": "Base functionality for Dhii unit tests.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,10 +11,13 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "dhii/test-base-interface": "dev-master"
+        "dhii/test-base-interface": "dev-master",
+        "phpunit/phpunit": "^5.4",
+        "dhii/test-common": "dev-master"
     },
     "require-dev": {
-        "dhii/php-cs-fixer-config": "dev-master"
+        "dhii/php-cs-fixer-config": "dev-master",
+        "codeclimate/php-test-reporter": "dev-master"
     },
     "repositories": [
         {
@@ -23,6 +26,10 @@
         },
         {
             "url": "https://github.com/Dhii/test-base-interface.git",
+            "type": "git"
+        },
+        {
+            "url": "https://github.com/Dhii/test-common.git",
             "type": "git"
         }
     ],
