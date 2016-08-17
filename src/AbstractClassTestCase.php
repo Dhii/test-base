@@ -2,8 +2,6 @@
 
 namespace Dhii\Test;
 
-use Dhii\Test\Tests;
-
 /**
  * Base functionality for class tests.
  *
