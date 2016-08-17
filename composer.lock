@@ -42,7 +42,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/test-common.git",
-                "reference": "0dd1b94471268fa3bfd5b7dabf8f39dd24ef29bf"
+                "reference": "b29882461c4baa4e9c15c05c7ad184f7bffa4be4"
             },
             "require": {
                 "phpunit/phpunit": "5.4.*"
@@ -67,7 +67,7 @@
                 }
             ],
             "description": "Functionality that is also needed to test tests.",
-            "time": "2016-07-18 12:26:58"
+            "time": "2016-08-17 13:15:14"
         },
         {
             "name": "doctrine/instantiator",
@@ -623,12 +623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "421ad3c3aaddf5ae071c9423dc59e0efb3d91426"
+                "reference": "834520ced1804672a7e42a0c9a41bc72a877895c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/421ad3c3aaddf5ae071c9423dc59e0efb3d91426",
-                "reference": "421ad3c3aaddf5ae071c9423dc59e0efb3d91426",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/834520ced1804672a7e42a0c9a41bc72a877895c",
+                "reference": "834520ced1804672a7e42a0c9a41bc72a877895c",
                 "shasum": ""
             },
             "require": {
@@ -693,7 +693,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-08-10 05:00:37"
+            "time": "2016-08-17 04:23:58"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -701,12 +701,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "363392d7d849dc05902d88cc1d7046805b6b5f2d"
+                "reference": "4e83390f64e7ce04fcaec2ce95cd72823b431d19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/363392d7d849dc05902d88cc1d7046805b6b5f2d",
-                "reference": "363392d7d849dc05902d88cc1d7046805b6b5f2d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/4e83390f64e7ce04fcaec2ce95cd72823b431d19",
+                "reference": "4e83390f64e7ce04fcaec2ce95cd72823b431d19",
                 "shasum": ""
             },
             "require": {
@@ -752,7 +752,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2016-07-02 15:30:03"
+            "time": "2016-08-17 09:33:51"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -1476,12 +1476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "ddb5565cdc864114a3e68503855db467416e0df5"
+                "reference": "117137e9970054d022b7656209f094dab852b90c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/ddb5565cdc864114a3e68503855db467416e0df5",
-                "reference": "ddb5565cdc864114a3e68503855db467416e0df5",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/117137e9970054d022b7656209f094dab852b90c",
+                "reference": "117137e9970054d022b7656209f094dab852b90c",
                 "shasum": ""
             },
             "require": {
@@ -1526,7 +1526,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2016-08-16 07:42:01"
+            "time": "2016-08-16 23:31:05"
         },
         {
             "name": "guzzle/guzzle",
