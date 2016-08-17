@@ -9,7 +9,7 @@ use Dhii\Test\TestUtil;
  *
  * @since [*next-version*]
  */
-class Type extends \PHPUnit_Framework_Constraint
+class Type extends AbstractConstraint
 {
     use TestUtil\CanGetVarTypeTrait;
 
