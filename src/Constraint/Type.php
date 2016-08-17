@@ -68,6 +68,6 @@ class Type extends \PHPUnit_Framework_Constraint
      */
     public function toString()
     {
-        return sprintf('class is "%1$s"', $this->_getType());
+        return sprintf('class is of type "%1$s"', $this->_getType());
     }
 }
