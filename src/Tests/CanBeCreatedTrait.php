@@ -17,12 +17,12 @@ trait CanBeCreatedTrait
      */
     public function testCanBeCreated()
     {
-        $instance = $this->createInstance();
+        $instance  = $this->createInstance();
         $className = $this->getClassName();
-        $this->assertClassType($instance, $className, sprintf('Object must be of type "%1$s"', $className));
+        $this->assertClassType($className, $instance, sprintf('Object must be of type "%1$s"', $className));
 
         if ($ancestorName = $this->getClassAncestor()) {
-            $this->assertInstanceOf($instance, $ancestorName, sprintf('Object must be an instance of "%1$s"', $ancestorName));
+            $this->assertInstanceOf($ancestorName, $instance, sprintf('Object must be an instance of "%1$s"', $ancestorName));
         }
     }
 
@@ -52,12 +52,12 @@ trait CanBeCreatedTrait
      *
      * @since [*next-version*]
      */
-    abstract public function assertClassType($actual, $expected, $message = '');
+    abstract public function assertClassType($expected, $actual, $message = '');
 
     /**
      * Asserts that an object extends a specific class, or implements a specific interface.
      *
      * @since [*next-version*]
      */
-    abstract public function assertInstanceOf($actual, $expected, $message = '');
+    abstract public function assertInstanceOf($expected, $actual, $message = '');
 }
