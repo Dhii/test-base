@@ -1,6 +1,6 @@
 <?php
 
-namespace Dhii\Test\Test;
+namespace Dhii\Test\Tests;
 
 /**
  * Functionality for testing whether the test subject can be created.

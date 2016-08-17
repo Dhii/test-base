@@ -2,7 +2,7 @@
 
 namespace Dhii\Test\Test\Test;
 
-use Dhii\Test\Test\CanBeCreatedTrait as TestSubject;
+use Dhii\Test\Tests\CanBeCreatedTrait as TestSubject;
 use Dhii\Test\Assertion;
 
 /**

@@ -2,7 +2,7 @@
 
 namespace Dhii\Test;
 
-use Dhii\Test\Test as Testing;
+use Dhii\Test\Tests;
 
 /**
  * Base functionality for class tests.
@@ -11,5 +11,5 @@ use Dhii\Test\Test as Testing;
  */
 abstract class AbstractClassTestCase extends AbstractTestCase  implements ClassTestCaseInterface
 {
-    use Testing\CanBeCreatedTrait;
+    use Tests\CanBeCreatedTrait;
 }
