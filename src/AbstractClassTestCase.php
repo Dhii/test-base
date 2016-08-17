@@ -10,4 +10,9 @@ namespace Dhii\Test;
 abstract class AbstractClassTestCase extends AbstractTestCase  implements ClassTestCaseInterface
 {
     use Tests\CanBeCreatedTrait;
+
+    public function isTestInstanceType()
+    {
+        return true;
+    }
 }

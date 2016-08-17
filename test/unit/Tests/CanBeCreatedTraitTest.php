@@ -34,6 +34,8 @@ class CanBeCreatedTraitTest extends \PHPUnit_Framework_TestCase
             ->will($this->returnCallback(function ($actual, $expected, $message = '') {
                 $this->assertTrue(false, $message);
             }));
+        $trait->method('isTestInstanceType')
+            ->willReturn(true);
 
         // Part of actual error message from the test subject
         $classTypeError = 'Object must be of type';
@@ -41,6 +43,36 @@ class CanBeCreatedTraitTest extends \PHPUnit_Framework_TestCase
         $this->assertAssertionFailure(function () use ($trait) {
                 $trait->testCanBeCreated();
         }, $classTypeError, 'Should not be able to create object due to type mismatch');
+    }
+
+    /**
+     * Tests that the check for valid created class succeeds despide type mismatch.
+     *
+     * The reason it succeeds is due to `isTestInstanceType()` returning `false`.
+     *
+     * @since [*next-version*]
+     */
+    public function testTestCanBeCreatedClassTypeSucceedsDespiteMismatch()
+    {
+        $subjectClass = TestSubject::class;
+        $trait = $this->getMockForTrait($subjectClass);
+        $trait->method('createInstance')
+            ->willReturn('[instance of subject]');
+        $trait->method('getClassName')
+            ->willReturn('[class name]');
+        $trait->method('getClassAncestor')
+            ->willReturn('[ancestor name]');
+        $trait->method('assertClassType')
+            ->will($this->returnCallback(function ($actual, $expected, $message = '') {
+                $this->assertTrue(false, $message);
+            }));
+        $trait->method('isTestInstanceType')
+            ->willReturn(false);
+
+        // Due to the class type assertion failing, this should pass
+        $this->assertAssertionSuccess(function () use ($trait) {
+                $trait->testCanBeCreated();
+        }, 'Should be able to create object despite type mismatch');
     }
 
     /**

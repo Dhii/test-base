@@ -19,12 +19,25 @@ trait CanBeCreatedTrait
     {
         $instance  = $this->createInstance();
         $className = $this->getClassName();
-        $this->assertClassType($className, $instance, sprintf('Object must be of type "%1$s"', $className));
+
+        if ($this->isTestInstanceType()) {
+            $this->assertClassType($className, $instance, sprintf('Object must be of type "%1$s"', $className));
+        }
 
         if ($ancestorName = $this->getClassAncestor()) {
             $this->assertInstanceOf($ancestorName, $instance, sprintf('Object must be an instance of "%1$s"', $ancestorName));
         }
     }
+
+    /**
+     * Whether or not to test the type of the created instance against a class type.
+     *
+     * Intended to implement {@see \Dhii\Test\ClassTestCaseInterface#isTestInstanceType()}
+     *
+     * @since [*next-version*]
+     * @see getClassName()
+     */
+    abstract public function isTestInstanceType();
 
     /**
      * @since [*next-version*]
